@@ -168,11 +168,10 @@
 						下载 Windows 版
 					</button>
 					
-					<a href="https://github.com/origingroup/hydrogen/releases" target="_blank">
-						<button>
-							下载 Mac 版
-						</button>
-					</a>
+					<button id="DownloadMacButton">
+						下载 Mac 版
+					</button>
+
 					<span style="margin-left: 30px;">当前版本为 beta@0.0.1</span>
 				</div>
 			</section>
@@ -190,5 +189,15 @@
 				</div>
 			</div>
 		</footer>
+
+		<script>
+			var $DownloadMacButton = document.getElementById("DownloadMacButton")
+			$DownloadMacButton.onclick = function () {
+				if (_hmt) {
+					_hmt.push(['_trackEvent', 'hydrogen', 'download', 'mac']);
+				}
+				window.open("https://github.com/origingroup/hydrogen/releases", "_blank")
+			}
+		</script>
 	</body>
 </html>
