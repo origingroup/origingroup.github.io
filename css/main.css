@@ -1,0 +1,171 @@
+html, body {
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	line-height: 1.4em;
+	color: #333;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	background: transparent;
+}
+
+html, body * {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 100%;
+	max-width: 800px;
+	margin: auto;
+}
+
+/**
+ * navigation
+ */
+.nav {
+	text-align: right;
+	margin: 10px;
+	border-bottom: solid 1px #e4e4e4;
+	z-index: 10;
+}
+.nav ul {
+	display: inline-block;
+}
+.nav ul li {
+	display: inline-block;
+	margin: 0 10px;
+	list-style: none;
+	cursor: default;
+}
+.nav ul li a {
+	color: #333;
+	text-decoration: none;
+	transition: all .4s ease;
+}
+
+.nav ul li a:hover{
+	color: #2376D6;
+}
+
+/**
+ * branding
+ */
+
+.branding {
+	text-align: center;
+	position: relative;
+}
+
+.bg-img {
+  position: absolute;
+  top: -100px;
+  width: 800px;
+  left: 50%;
+  opacity: .4;
+  margin-left: -400px;
+  z-index: -1;
+}
+
+.in-one {
+	width: 1000px;
+	margin-top: 60px;
+	margin-left: -100px;
+}
+
+.branding .logo {
+	width: 100px;
+	margin-top: 50px;
+	margin-bottom: 40px;
+}
+
+.branding .slogan .comma {
+	font-size: 50px;
+}
+.branding .slogan {
+	font-size: 21px;
+	margin-bottom: 50px;
+}
+
+
+h1 {
+  font-size: 1.6rem;
+	font-weight: normal;
+	margin-bottom: 46px;
+}
+
+p {
+  color: #666;
+  line-height: 1.6em;
+}
+
+.play-button {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	border-radius: 50px;
+	background: whitesmoke;
+	box-shadow: 0 10px 30px #e3e5ea;
+	margin-top: 30px;
+	position: relative;
+	line-height: 50px;
+}
+.play-button:after {
+	content: "";
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	left: 3px;
+	border-top: solid 15px transparent;
+	border-bottom: solid 15px transparent;
+	border-left: solid 20px #2376D6;
+}
+
+.center {
+	text-align: center;
+}
+
+.spliter {
+	border-top: solid 3px;
+	width: 60px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+.todo-steps {
+	padding: 10px;
+}
+.todo-steps .step {
+	margin-bottom: 60px;
+}
+.todo-steps .step .block.shrink{
+	width: 150px;
+}
+
+.gray-bg {
+	background: rgba(245, 245, 246, 0.49);
+}
+
+.todo-steps .step .block.shrink img {
+	width: 50px;
+}
+
+button {
+	padding: 10px 20px;
+	border-radius: 3px;
+	border: solid 1px #2376D6;
+	color: #2376D6;
+	background: #e8f1ff;
+	outline: none !important;
+	margin-right: 20px;
+} 
+
+button.disabled {
+	opacity: .4;
+	cursor: no-drop;
+}
+
+
+footer {
+	background: #363738;
+	color: white;
+	height: 160px;
+}
