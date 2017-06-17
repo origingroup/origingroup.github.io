@@ -6,7 +6,12 @@
 		<link rel="stylesheet" href="./css/main.css"/>
 
 		<script>
-			if (navigator.language === "zh-CN") {
+			var locale = navigator.language;
+			if (window.location.search.indexOf("locale=en-US") >= 0) {
+				locale = "en-US";
+			}
+
+			if (locale === "zh-CN") {
 				window.location.href = "./index.zh.html";
 			}
 		</script>
