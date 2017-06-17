@@ -148,7 +148,7 @@ p {
 	width: 50px;
 }
 
-button {
+button, .button {
 	padding: 10px 20px;
 	border-radius: 3px;
 	border: solid 1px #2376D6;

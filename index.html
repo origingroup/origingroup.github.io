@@ -7,7 +7,7 @@
 
 		<script>
 			if (navigator.language === "zh-CN") {
-				window.location.href = "./index.zh.html";
+				// window.location.href = "./index.zh.html";
 			}
 		</script>
 
@@ -180,8 +180,8 @@
 					Support payments types:
 					
 					<ul>
-						<li>
-							Paypal: 570171025@qq.com
+						<li style="margin-bottom: 20px;">
+							Paypal: <button class="button" id="PaypalButton" taget="_blank" />https://www.paypal.me/6174</button>
 						</li>
 						<li>
 							FastSpring: <button class="disabled"> Buy License </button>
@@ -228,12 +228,21 @@
 
 		<script>
 			var $DownloadMacButton = document.getElementById("DownloadMacButton")
+			var $PaypalButton = document.getElementById("PaypalButton");
 			$DownloadMacButton.onclick = function () {
 				if (_hmt) {
 					_hmt.push(['_trackEvent', 'hydrogen', 'download', 'mac']);
 				}
 				window.open("https://github.com/origingroup/hydrogen/releases", "_blank")
 			}
+
+			$PaypalButton.onclick = function() {
+				if (_hmt) {
+					_hmt.push(['_trackEvent', 'hydrogen', 'buy', 'paypal']);
+				}
+				window.open("https://www.paypal.me/6174", "_blank")
+			}
+
 		</script>
 	</body>
 </html>
